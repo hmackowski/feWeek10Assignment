@@ -14,6 +14,7 @@
     <h1 class="text-center">PokéMon Caught</h1>
     <div class="card bg-dark">
       <div class="card-body">
+        <!-- Form for entering Trainer Name and Pokémon details -->
         <div class="row">
           <div class="col-sm">
             <div class="form-group">
@@ -42,6 +43,7 @@
             <div class="form-group">
               <label for="pokemon-type" class="text-light">PokéMon Type</label>
               <select class="form-control" id="pokemon-type">
+                <!-- Dropdown options for Pokémon types -->
                 <option value="Normal">Normal</option>
                 <option value="Fire">Fire</option>
                 <option value="Water">Water</option>
@@ -71,12 +73,14 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-1">
+        <!-- Button to add a new entry -->
+        <div class="col-sm-2 col-md-2 col-lg-1">
           <br>
           <button id="add" class="btn btn-primary form-control">Create</button>
         </div>
       </div>
     </div>
+    <!-- Table for displaying the list of Pokémon caught -->
     <table id="list"
       class="table table-dark table-striped table-bordered table-hover">
       <tr>
@@ -90,6 +94,7 @@
 
     </table>
 
+    <!-- JavaScript files -->
     <script src="index.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
