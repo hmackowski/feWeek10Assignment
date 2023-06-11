@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Collection Log</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+
+  </head>
+
+  <body class="container">
+    <br />
+    <h1 class="text-center">PokéMon Caught</h1>
+    <div class="card bg-dark">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="trainer-name" class="text-light">Trainer Name</label>
+              <input type="text" class="form-control" id="trainer-name"
+                placeholder="Trainer Name">
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="pokemon-name" class="text-light">PokéMon</label>
+              <input type="text" class="form-control" id="pokemon-name"
+                placeholder="PokéMon">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="pokemon-level" class="text-light">PokéMon Level</label>
+              <input type="number" class="form-control" id="pokemon-level"
+                placeholder="PokéMon Level">
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="pokemon-type" class="text-light">PokéMon Type</label>
+              <select class="form-control" id="pokemon-type">
+                <option value="Normal">Normal</option>
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Electric">Electric</option>
+                <option value="Grass">Grass</option>
+                <option value="Ice">Ice</option>
+                <option value="Fighting">Fighting</option>
+                <option value="Poison">Poison</option>
+                <option value="Ground">Ground</option>
+                <option value="Flying">Flying</option>
+                <option value="Psychic">Psychic</option>
+                <option value="Bug">Bug</option>
+                <option value="Rock">Rock</option>
+                <option value="Ghost">Ghost</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Dark">Dark</option>
+                <option value="Steel">Steel</option>
+                <option value="Fairy">Fairy</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="pokemon-ability" class="text-light">PokéMon Ability</label>
+              <input type="text" class="form-control" id="pokemon-ability"
+                placeholder="PokéMon Ability">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <br>
+          <button id="add" class="btn btn-primary form-control">Create</button>
+        </div>
+      </div>
+    </div>
+    <table id="list"
+      class="table table-dark table-striped table-bordered table-hover">
+      <tr>
+        <th>Trainer</th>
+        <th>Pokemon</th>
+        <th>Level</th>
+        <th>Type</th>
+        <th>Ability</th>
+        <th></th>
+      </tr>
+
+    </table>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+
+</html>
